@@ -1,0 +1,6 @@
+task:
+  name: demo-agent-workflow
+  kind: workflow
+  objectives: [quality, speed, token_cost]
+  budget:
+    max_candidates: 8

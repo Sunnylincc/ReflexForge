@@ -1,0 +1,6 @@
+task:
+  name: demo-code-optimization
+  kind: code
+  objectives: [correctness, speed, maintainability]
+  budget:
+    max_candidates: 6
