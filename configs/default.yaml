@@ -1,0 +1,22 @@
+engine:
+  max_iterations: 5
+  min_marginal_gain: 0.01
+  db_url: sqlite+aiosqlite:///./reflexforge.db
+  storage_backend: sqlite
+  log_level: INFO
+
+task:
+  name: default-demo
+  kind: code
+  objectives: [correctness, quality, speed, token_cost, memory_usage, maintainability, robustness]
+  budget:
+    max_candidates: 8
+
+weights:
+  correctness: 0.30
+  quality: 0.20
+  speed: 0.15
+  token_cost: -0.10
+  memory_usage: -0.05
+  maintainability: 0.10
+  robustness: 0.10
